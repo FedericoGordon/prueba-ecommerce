@@ -1,10 +1,10 @@
 let box = document.querySelector(`.boxprincipal`);
 
 function mostrarProducto() {
-    let productosLS = cargarProductosLStorage(); 
+    let productosLS = cargarProductosLStorage();
 
     productosLS.forEach((producto) => {
-        box.innerHTML +=` <div class="col-md-3 mt-2 ">
+        box.innerHTML += ` <div class="col-md-4 mt-2 ">
             <div class="card d-flex align-items-center" style="width: 18rem; " ">
                 <img src="${"../img/" + producto.imagen}" height="200rem" width="90%"  alt="${producto.marca} ${producto.modelo}">
                 <div class="card-body">
@@ -20,6 +20,21 @@ function mostrarProducto() {
     })
 }
 
+function aviso() {
+    Toastify({
+        text: "Se agrego el producto al carrito",
+        duration: 2000,
+        close: true,
+        gravity: "bottom",
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+            background: "lightgreen",
+            color: "black",
+        },
+        onClick: function () {} // Callback after click
+    }).showToast();
+};
+
 mostrarCantidadCarrito();
 mostrarProducto();
-

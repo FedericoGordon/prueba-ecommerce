@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../estilo.css">
     <title>Productos</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,7 +29,8 @@
                             <a class="nav-link" href="producto.html">PRODUCTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="carrito.html">CARRITO <span id="carrito" class="badge bg-primary">0</span></a>
+                            <a class="nav-link" href="carrito.html">CARRITO <span id="carrito"
+                                    class="badge bg-primary">0</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -49,11 +52,33 @@
             <div id="remove" class="col-2">
             </div>
 
-            <div id="prodCarrito"  class="col-12">
+            <div id="prodCarrito" class="col-12">
             </div>
 
             <div id="totalCompra" class="col-12">
             </div>
+
+            <div class="col-2">
+                <a href="./producto.html">
+                    <button type="button" class="btn btn-secondary">Volver</button>
+                </a>
+            </div>
+
+            <div id="botonpagar" class="col-6">
+            </div>
+            
+            <div id="intereses" class="col-4">
+
+            </div>
+
+            </div>
+            <div id="cuadrointereses" class="intereses col-6 bg-info ">
+            </div>
+            <div class="datopago col-12">
+            </div>
+            <div id="spinner">
+            </div>
+
         </div>
     </div>
 
@@ -72,11 +97,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/carga_datos.js"></script>
     <script src="../js/carrito.js"></script>
-    
     <script src="../js/main.js"></script>
     <script src="../js/carrito_pag.js"></script>
+    <script src="../js/pago.js"></script>
 </body>
+
 </html>
+

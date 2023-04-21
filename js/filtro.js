@@ -9,7 +9,7 @@ function canalesMinimo() {
     console.log(productosFiltrados);
     box.innerHTML =``;
     productosFiltrados.forEach((producto) => {
-        box.innerHTML +=` <div class="col-md-3 mt-2 ">
+        box.innerHTML +=` <div class="col-md-4 mt-2 ">
             <div class="card d-flex align-items-center" style="width: 18rem; " ">
                 <img src="${"../img/" + producto.imagen}" height="200rem" width="90%"  alt="${producto.marca} ${producto.modelo}">
                 <div class="card-body">
@@ -28,13 +28,13 @@ function canalesMinimo() {
 
 function mostrarPregCanalesMinimos(){
     boxFiltros.innerHTML =` 
-        <div class="col-md-2 ">
+        <div class="p-2" >
             <label for="pregunta" class="form-label">Cantidad minima de canales que necesita</label>
         </div>
-        <div class="col-md-4 ">
-            <input id="minimocanalesimput" class="form-control" type="text" placeholder="Ingrese aqui un valor">
+        <div class="p-2" >
+            <input id="minimocanalesimput" class="form-control" type="text" placeholder="Nº de canales">
         </div>
-        <div class="col-md-1">
+        <div class="p-2" >
             <button type="submit" onclick= "canalesMinimo();" class="btn btn-outline-success">Filtrar</button>
         </div>
 

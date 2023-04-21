@@ -18,6 +18,7 @@ function agregarCarrito(codigo){
     console.log(carrito);
     guardarCarritoLS(carrito);
     mostrarCantidadCarrito();
+    aviso();
 }
 
 function cantidadCarrito(){
@@ -35,6 +36,10 @@ function vaciarCarrito(){
     mostrarCarrito();
     mostrarBotonVaciar();
     mostrarTotalCompra();
+    document.getElementById("botonpagar").innerHTML =``
+    document.getElementById("intereses").innerHTML =``
+    document.getElementById("cuadrointereses").innerHTML =``
+    
     }
 
 function resetCarrito(){

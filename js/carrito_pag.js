@@ -32,7 +32,7 @@ function mostrarTotalCompra(){
             (document.getElementById("totalCompra")).innerHTML =` <table class="table">
             <tr>
                 <td>Cantidad de productos: ${cantidadCarrito()} </td>
-                <td>TOTAL $ ${total}</td>
+                <td>TOTAL $ ${total} Ars</td>
             </tr>`
             :(document.getElementById("totalCompra")).innerHTML =``
 }
