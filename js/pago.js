@@ -75,7 +75,7 @@ function datosPagoTran(){
 };
 
 function mostrarIntereses(){
-fetch(`../intereses.json`)
+fetch(`../js/intereses.json`)
 .then ((respuesta) => respuesta.json() )
 .then((monedas) => {
     let salida = "";
